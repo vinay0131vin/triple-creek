@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="animate.min.css">
+  <script src="jquery.js"></script>
+</head>
+<body style="background-color:black;">
+<div class="animated infinate heartBeat jello delay-1s" style="text-align: center;"><h1><font color="red">AVENGERS</font></h1></div>
+	 <div style="width:100%"><img id="topimg" style="width: 100%;height: 700px;" src=""></div>
+<hr>
+<div><h3 style="text-align: center;margin-top: 0"><font color="white"><strong>Marvel's The Avengers  or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.It is the sixth film in the Marvel Cinematic Universe (MCU). The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the titular Avengers team, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the spy agency S.H.I.E.L.D., recruits Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team that must stop Thor's brother Loki from subjugating Earth.</font></strong></h3></div>
+<script type="text/javascript">
+         var t=0;
+         var imgs=["hotel4.jpg","hotel6.jpg", "hotel3.jpg"];
+         $("#topimg").attr('src',imgs[t]);
+         var slide= () => {
+            $("#topimg").attr('src',imgs[(++t)%imgs.length]);
+         };
+         var inter=setInterval(slide,3000);
+       </script>
+</body>
+</html>
